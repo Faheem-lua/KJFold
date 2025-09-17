@@ -1,16 +1,3 @@
--- Create the Tool instance
-local tool = Instance.new("Tool")
-
--- Set the tool's properties
-tool.Name = "20-20-20 Dropkick"
-tool.RequiresHandle = false  -- Set to true if you have a handle part
-tool.CanBeDropped = true     -- Change as needed
-
--- Add a description or other properties
-tool.ToolTip = "The infamous dropkick from KJ."
-
--- Function to make stuff happen when activated
-local function activateTool()
 local p = game.Players.LocalPlayer
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
@@ -1049,4 +1036,5 @@ tool.Equipped:Connect(function()
 end)
 
 -- Add the tool to the player's backpack
+
 tool.Parent = game.Players.LocalPlayer.Backpack
